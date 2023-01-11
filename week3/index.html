@@ -1,45 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>WEBPROG Webpage</title>
 <link rel="icon" type="image/png" href="img/favicon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.sample {
-	background-color: cyan;
-	color: black;
-	border: 4px solid black;
-	margin: 25px;
-	padding: 10px;
+* {
+  box-sizing: border-box;
 }
-#sampleid {
-	background-color: orange;
-	color: blue;
-	padding: 40px;
-	text-align: center;
+body {
+  font-style: Arial;
+}
+header {
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: blue;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 1165px;
+  background-color: magenta;
+  height: 400px;
+  color: white;
+  font-size: 35px;
+}
+section {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav {
+  float: left;
+  width: 300px;
+  height: 400px;
+  background: cyan;
+  padding: 20px;
+  color: red;
+  font-size: 25px;
+}
+footer {
+  background-color: red;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  color: yellow;
 }
 </style>
 </head>
 <body>
+<header>
+  <h2>Header</h2>
+</header>
 
-<h1 style="font-size:100px; color:blue;">This is a heading font size 100px and color blue(CSS)</h1>
-<p style="background-color:yellow;">Paragraph(p) with style attribute (background-color:yellow) </p>
-<hr>
-<p> Paragraph<br><b>paaragraph after a line break(br) with bold formatting</b></p>
-<hr>
-<p>hr was used to show thematic change (horizontal line)</p>
-<p>this is a sentence with <span style="border: 1px solid black">inline</span> element.</p>
-<hr>
-<p>This is an example of abbr for Asia Pacific College<abbr title="Asia Pacific College">APC</abbr>.</p>
-<img src="nilou.jpg" alt="image of a girl" width="450" height="250">
-<p style="color:red;"> A red paragraph</p>
-<p title="A title"> Title example</p>
-<a href="https://www.youtube.com/">Hyperlink to Youtube</a>
-<!-- this is a comment -->
-<div class="sample">
-<h3>Classes</h2>
-<p>These texts are inside the class attribute</p>
-</div>
-<h1 id="sampleid">Example of using id attribute</h1>
-<img src="../hutao.jpg" alt="image of a girl" width="450" height="250"><p>This image is located in the folder one level up from the current folder</p>
+<section>
+  <nav>
+  <h3>Section</h3>
+  <p>This is the section part of the webpage.</p>
+  </nav>
+  <article>
+    <h3>Article</h3>
+    <p>This is the article part of the webpage</p>
+  </article>
+  
+</section>
+
+
+<footer>
+  <p>Footer</p>
+</footer>
+
 </body>
 </html>
