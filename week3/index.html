@@ -1,76 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>WEBPROG Webpage</title>
-<link rel="icon" type="image/png" href="img/favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-}
-body {
-  font-style: Arial;
-}
-header {
-  background-color: orange;
-  padding: 10px;
-  text-align: center;
-  font-size: 50px;
-  color: blue;
-}
-article {
-  float: left;
-  padding: 20px;
-  width: 1165px;
-  background-color: magenta;
-  height: 400px;
-  color: white;
-  font-size: 35px;
-}
-section {
-  content: "";
-  display: table;
-  clear: both;
-}
-nav {
-  float: left;
-  width: 300px;
-  height: 400px;
-  background: cyan;
-  padding: 20px;
-  color: red;
-  font-size: 25px;
-}
-footer {
-  background-color: red;
+.whole {
+  margin: 0;
   padding: 5px;
-  font-size: 30px;
-  text-align: center;
-  color: yellow;
+  background-color: yellow;
+}
+
+.whole > h1, .content {
+  margin: 10px;
+  padding: 5px;
+}
+
+.content {
+  background: cyan;
+}
+
+.content > h2, p {
+  margin: 5px;
+  font-size: 100%;
 }
 </style>
 </head>
 <body>
-<header>
-  <h2>Header</h2>
-</header>
 
-<section>
-  <nav>
-  <h3>Section</h3>
-  <p>This is the section part of the webpage.</p>
-  </nav>
-  <article>
-    <h3>Article</h3>
-    <p>This is the article part of the webpage</p>
+<article class="whole">
+  <h1>Semantics</h1>
+  <article class="content">
+    <h2>Example1</h2>
+    <p>These are examples of using the semantic element</p>
   </article>
-  
-</section>
-
-
-<footer>
-  <p>Footer</p>
-</footer>
+  <article class="content">
+	<h2>Example2</h2>
+	<p>These are examples of using the semantic element</p>
+  </article>
+  <article class="content">
+	<h2>Example3</h2>
+	<p>These are examples of using the semantic element</p>
+  </article>
+</article>
 
 </body>
 </html>
+
