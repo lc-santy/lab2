@@ -9,9 +9,28 @@
 h2 {
 	color: red;
 }
-.neonbordersample{
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+.bordersample{
   border: solid;
   border-color: red;
+  border-radius: 40px;
+  float: left;
+  padding: 50px;
+}
+.bordersample2{
+  background-color: black;
+  border: solid;
   border-radius: 40px;
   float: left;
   padding: 50px;
@@ -66,8 +85,11 @@ h2 {
 <p>Examples of symbols that can be used: &forall;, &part;, &exist; </p>
 <p>Lesson 2.20 - URL Encode </p>
 <p>Lesson 2.21 - HTML vs XHTML</p>
-<div class="neonbordersample">
+<div class="bordersample">
   <h2 align="center">Sample red text in a red, curved border</h1>
+</div>
+<div class="bordersample2">
+  <h1 class="neonText" align="center">Sample with neon colors using text shadow trick</h1>
 </div>
 </body>
 </html>
