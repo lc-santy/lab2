@@ -124,10 +124,10 @@ echo $gender . "<br>";
 ?>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "testdb";
+$servername = "192.168.150.213";
+$username = "webprogmi212";
+$password = "b3ntRhino98";
+$dbname = "webprogmi212";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -137,7 +137,14 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-
+$sql = "CREATE TABLE lcsanty_myGuests (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+email VARCHAR(100),
+website VARCHAR(100),
+comment VARCHAR(150),
+gender VARCHAR(20)
+)";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
