@@ -146,9 +146,15 @@ comment VARCHAR(150),
 gender VARCHAR(20)
 )";
 
+if ($conn->query($sql) === TRUE) {
+  echo "Table lcsanty_myGuests created successfully";
+} else {
+  echo "Error creating table: " . $conn->error;
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$sql = "INSERT INTO MyGuests_test3 (name, email, website, comment, gender)
+$sql = "INSERT INTO lcsanty_myGuests (name, email, website, comment, gender)
 VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
 if ($conn->query($sql) === TRUE) {
