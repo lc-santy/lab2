@@ -146,11 +146,6 @@ comment VARCHAR(150),
 gender VARCHAR(20)
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table lcsanty_myGuests created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
