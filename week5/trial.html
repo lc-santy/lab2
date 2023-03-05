@@ -86,19 +86,17 @@ h2 {
 <p>Lesson 2.20 - URL Encode </p>
 <p>Lesson 2.21 - HTML vs XHTML</p>
 
-<h2>JavaScript For Of Loop</h2>
-<p>The for of statement loops through the values of any iterable object:</p>
+<h2>JavaScript While Loop</h2>
 
 <p id="demo"></p>
 
 <script>
-const cars = ["BMW", "Volvo", "Mini"];
-
 let text = "";
-for (let x of cars) {
-  text += x + "<br>";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
 }
-
 document.getElementById("demo").innerHTML = text;
 </script>
 
