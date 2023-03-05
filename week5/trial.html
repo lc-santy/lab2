@@ -86,17 +86,19 @@ h2 {
 <p>Lesson 2.20 - URL Encode </p>
 <p>Lesson 2.21 - HTML vs XHTML</p>
 
-<h2>JavaScript While Loop</h2>
+<h2>JavaScript Loops</h2>
+
+<p>A loop with a <b>break</b> statement.</p>
 
 <p id="demo"></p>
 
 <script>
 let text = "";
-let i = 0;
-while (i < 10) {
-  text += "<br>The number is " + i;
-  i++;
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
 }
+
 document.getElementById("demo").innerHTML = text;
 </script>
 
