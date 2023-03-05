@@ -86,20 +86,20 @@ h2 {
 <p>Lesson 2.20 - URL Encode </p>
 <p>Lesson 2.21 - HTML vs XHTML</p>
 
-<h2>JavaScript For In Loop</h2>
-<p>The for in statement loops through the properties of an object:</p>
+<h2>JavaScript For Of Loop</h2>
+<p>The for of statement loops through the values of any iterable object:</p>
 
 <p id="demo"></p>
 
 <script>
-const person = {fname:"John", lname:"Doe", age:25}; 
+const cars = ["BMW", "Volvo", "Mini"];
 
-let txt = "";
-for (let x in person) {
-  txt += person[x] + " ";
+let text = "";
+for (let x of cars) {
+  text += x + "<br>";
 }
 
-document.getElementById("demo").innerHTML = txt;
+document.getElementById("demo").innerHTML = text;
 </script>
 
 <div class="bordersample">
