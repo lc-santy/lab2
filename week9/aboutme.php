@@ -47,7 +47,7 @@
           <div class="details">
             <h2> <strong>Personal<br>Information</strong></h2>
             <p>My name is Leander Lygel C. Santy, I am 20 years old. I currently live in Pasay 
-			City with my family.</p>
+			City with my family</p>
           </div>
         </div>
         <!--image card end-->

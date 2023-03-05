@@ -85,11 +85,29 @@ h2 {
 <p>Examples of symbols that can be used: &forall;, &part;, &exist; </p>
 <p>Lesson 2.20 - URL Encode </p>
 <p>Lesson 2.21 - HTML vs XHTML</p>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
 <div class="bordersample">
   <h2 align="center">Sample red text in a red, curved border</h1>
 </div>
 <div class="bordersample2">
   <h1 class="neonText" align="center">Sample with neon colors using text shadow trick</h1>
 </div>
+<br>
+
 </body>
 </html>
